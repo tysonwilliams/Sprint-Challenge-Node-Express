@@ -5,6 +5,12 @@ const bodyParser = require('body-parser');
  
 const app = express();
 const PORT = config.port;
+
+app.use(bodyParser.json());
+
+app.get('/compare', (req, res) => {
+  
+});
  
 app.listen(PORT, err => {
   if (err) {
